@@ -1,0 +1,38 @@
+{
+  "name": "ng",
+  "version": "1.0.1",
+  "modified": "2014-01-22",
+  "description": "Angular.js app with node.js and MongoDB on OpenShift",
+  "keywords": [
+    "OpenShift",
+    "Node.js",
+    "MongoDB",
+    "OpenShift"
+  ],
+  "author": {
+    "name": "sviete.pl",
+    "email": "andrzej.raczkowski@sviete.pl",
+    "url": "http://www.sviete.pl/"
+  },
+  "homepage": "http://www.cwms.pl/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/araczkowski/angular-example"
+  },
+
+  "engines": {
+    "node": ">= 0.6.0",
+    "npm": ">= 1.0.0"
+  },
+
+  "dependencies": {
+    "mongojs": "0.9.11",
+	"node-static":"0.7.2",
+	"restify":"2.6.1"
+  },
+  "devDependencies": {},
+  "bundleDependencies": [],
+
+  "private": true,
+  "main": "server.js"
+}
