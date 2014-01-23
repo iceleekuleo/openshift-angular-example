@@ -11,7 +11,7 @@ Running on OpenShift
 
 Create an account at http://openshift.redhat.com/
 
-Create a nodejs-0.10 application (you can call your application whatever you want)
+Create a nodejs application (you can call your application whatever you want)
 
     rhc app create -a ng -t nodejs-0.10
 
@@ -35,8 +35,8 @@ Build version
     grunt
 
 Then push the repo upstream
-    mv .openshift dist
-    mv .git dist
+
+    mv .openshift .git dist
     cd dist
     git push
 
