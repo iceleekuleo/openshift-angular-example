@@ -1,8 +1,8 @@
 Angular.js app with node.js and MongoDB on OpenShift
 ====================
 
-This git repository helps you get up and running quickly w/ a Angular.js application with node.js and MongoSB  on OpenShift. 
-The backend database is MongoDB and the database name is the same as your application name (using $ENV['OPENSHIFTAPP_NAME']). 
+This git repository helps you get up and running quickly w/ a Angular.js application with nodejs on OpenShift. 
+The backend database is MongoDB and the database name is the same as your application name (using process.env.OPENSHIFT_APP_NAME). 
 You can call your application by whatever name you want (the name of the database will always match the application).
 
 
@@ -11,7 +11,7 @@ Running on OpenShift
 
 Create an account at http://openshift.redhat.com/
 
-Create a nodejs-0.10 application (you can call your application whatever you want)
+Create a nodejs-0.10 ng application (you can call your application whatever you want)
 
     rhc app create -a ng -t nodejs-0.10
     
