@@ -1,15 +1,17 @@
 'use strict';
 
 angular.module('nApp')
-  .controller('MainCtrl', function ($scope,ws) {
+  .controller('MainCtrl', function ($scope, ws) {
+    $scope.infoFromDB = '';
     $scope.getInfoFromDB = function () {
       ws.MongoDbInfo()
         .success(function (data) {
-          window.alert(JSON.stringify(data));
+          $scope.infoFromDB = data;
         }).
       error(function (data, status) {
-        window.alert('Failed to get information about MongoDB. An error: ' + status);
-
+        $scope.infoFromDB = 'Failed to get information about MongoDB. An error: ' + status;
       });
     };
+
+
   });

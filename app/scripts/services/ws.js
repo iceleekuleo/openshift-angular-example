@@ -6,8 +6,8 @@ angular.module('nApp')
       MongoDbInfo: function () {
         return $http({
           method: 'GET',
-          url: 'http://' + 'localhost' + ':3000' + '/info',
-          timeout: 300,
+          url: '/info',
+          timeout: 3000,
           cache: false
         });
       }
